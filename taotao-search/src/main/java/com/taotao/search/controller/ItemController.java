@@ -26,6 +26,7 @@ public class ItemController {
     @RequestMapping("/importall")
     @ResponseBody
     public TaotaoResult importAllItems() throws SolrServerException, IOException {
+
         TaotaoResult result = itemService.importAllItems();
 
         return result;
